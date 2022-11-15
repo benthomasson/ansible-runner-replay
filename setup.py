@@ -40,5 +40,10 @@ setup(
     tests_require=test_requirements,
     url='https://github.com/benthomasson/ansible_runner_replay',
     version='0.1.0',
+    entry_points={
+        'console_scripts': [
+            'ansible-runner=ansible_runner_replay.cli:main',
+        ]
+    },
     zip_safe=False,
 )
